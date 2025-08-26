@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:gharelu/src/auth/data_source/auth_remote_source.dart';
 import 'package:gharelu/src/auth/models/custom_user_model.dart';
+import 'package:gharelu/src/core/errors/app_error.dart';
 import 'package:gharelu/src/core/state/app_state.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

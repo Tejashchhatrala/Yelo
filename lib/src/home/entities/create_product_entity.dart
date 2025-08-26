@@ -6,7 +6,7 @@ import 'package:gharelu/src/home/models/service_model.dart';
 part 'create_product_entity.freezed.dart';
 
 @freezed
-class CreateProductEntity with _$CreateProductEntity {
+abstract class CreateProductEntity with _$CreateProductEntity {
   const CreateProductEntity._();
   const factory CreateProductEntity({
     required Field productName,

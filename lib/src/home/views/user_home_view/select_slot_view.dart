@@ -6,6 +6,7 @@ import 'package:gharelu/src/core/extensions/context_extension.dart';
 import 'package:gharelu/src/core/extensions/date_time_extension.dart';
 import 'package:gharelu/src/core/extensions/extensions.dart';
 import 'package:gharelu/src/core/routes/app_router.dart';
+import 'package:gharelu/src/core/state/app_state.dart';
 import 'package:gharelu/src/core/theme/app_styles.dart';
 import 'package:gharelu/src/core/theme/theme.dart';
 import 'package:gharelu/src/core/widgets/widgets.dart';
@@ -86,7 +87,7 @@ class _SelectSlotViewState extends ConsumerState<SelectSlotView> {
                     activeDayColor: Colors.white,
                     activeBackgroundDayColor:
                         AppColors.primaryColor.withOpacity(.8),
-                    dotsColor: AppColors.midGreyColor,
+                    dotColor: AppColors.midGreyColor,
                   ),
                   20.verticalSpace,
                   Container(

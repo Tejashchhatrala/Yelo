@@ -5,7 +5,7 @@ import 'package:gharelu/src/home/models/product_model.dart';
 part 'cart_entities.freezed.dart';
 
 @freezed
-class CartEntities with _$CartEntities {
+abstract class CartEntities with _$CartEntities {
   const CartEntities._();
   const factory CartEntities({
     @Default([]) List<ProductModel> products,

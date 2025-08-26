@@ -1,3 +1,4 @@
+import 'package:gharelu/src/core/errors/app_error.dart';
 import 'package:gharelu/src/core/state/app_state.dart';
 import 'package:gharelu/src/home/data_source/service_data_source.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

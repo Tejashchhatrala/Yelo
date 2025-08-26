@@ -6,7 +6,7 @@ part 'product_model.g.dart';
 part 'product_model.freezed.dart';
 
 @freezed
-class ProductModel with _$ProductModel {
+abstract class ProductModel with _$ProductModel {
   @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
   const factory ProductModel({
     required String id,

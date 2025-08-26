@@ -4,7 +4,7 @@ import 'package:gharelu/src/core/validations/field.dart';
 part 'user_login_entity.freezed.dart';
 
 @freezed
-class UserLoginEntity with _$UserLoginEntity {
+abstract class UserLoginEntity with _$UserLoginEntity {
   const UserLoginEntity._();
   const factory UserLoginEntity({
     required Field email,

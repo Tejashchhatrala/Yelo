@@ -1,5 +1,6 @@
 import 'package:gharelu/src/chat/data_source/chat_data_source.dart';
 import 'package:gharelu/src/chat/models/message_model.dart';
+import 'package:gharelu/src/core/errors/app_error.dart';
 import 'package:gharelu/src/core/state/app_state.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -12,7 +13,7 @@ class SendMessageNotifier extends StateNotifier<AppState<bool>> {
     state = response.fold(
       (error) => error.when(
           serverError: (message) => AppState.error(message: message),
-          noInternet: () => AppState.noInternet()),
+          noInternet: () => const AppState.noInternet()),
       (response) => AppState.success(data: response),
     );
   }

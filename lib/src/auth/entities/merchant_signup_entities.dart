@@ -5,7 +5,7 @@ import 'package:gharelu/src/core/validations/field.dart';
 part 'merchant_signup_entities.freezed.dart';
 
 @freezed
-class MerchantSignupFromEntity with _$MerchantSignupFromEntity {
+abstract class MerchantSignupFromEntity with _$MerchantSignupFromEntity {
   const MerchantSignupFromEntity._();
   const factory MerchantSignupFromEntity({
     required Field name,

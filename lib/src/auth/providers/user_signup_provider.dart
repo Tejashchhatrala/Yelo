@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gharelu/src/auth/data_source/auth_remote_source.dart';
+import 'package:gharelu/src/core/errors/app_error.dart';
 import 'package:gharelu/src/core/state/app_state.dart';
 
 class UserSignupProvider extends StateNotifier<AppState<User?>> {

@@ -19,13 +19,15 @@ import 'package:gharelu/src/home/providers/get_user_bookings.dart';
 import 'package:gharelu/src/home/providers/make_booking_provider.dart';
 import 'package:gharelu/src/home/widgets/widgets.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:khalti_flutter/khalti_flutter.dart';
 
 @RoutePage()
 class CheckoutView extends HookConsumerWidget {
-  const CheckoutView(
-      {Key? key, required this.date, required this.time, required this.service})
-      : super(key: key);
+  const CheckoutView({
+    Key? key,
+    required this.date,
+    required this.time,
+    required this.service,
+  }) : super(key: key);
   final String date;
   final String time;
   final ServiceModel service;
@@ -40,18 +42,22 @@ class CheckoutView extends HookConsumerWidget {
           context.showSnackbar(message: 'Booking Confirm');
           ref.read(getUserBookingsNotifierProvider.notifier).getBookings();
           context.router.root.innerRouterOf(DashboardRouter.name)
-            ?..innerRouterOf<TabsRouter>(DashboardRouter.name)
-                ?.setActiveIndex(1)
+            ?..innerRouterOf<TabsRouter>(
+              DashboardRouter.name,
+            )?.setActiveIndex(1)
             ..navigate(const AppointmentRouter());
-          context.router
-              .popUntil((route) => route.settings.name == DashboardRouter.name);
+          context.router.popUntil(
+            (route) => route.settings.name == DashboardRouter.name,
+          );
         },
       );
     });
     return Consumer(
       builder: (context, ref, _) {
         return ScaffoldWrapper(
-          loading: ref.watch(createBookingProvider).maybeWhen(
+          loading: ref
+              .watch(createBookingProvider)
+              .maybeWhen(
                 orElse: () => false,
                 loading: () => true,
               ),
@@ -75,37 +81,37 @@ class CheckoutView extends HookConsumerWidget {
                       PaymentCard(
                         title: 'Pay with Khalti',
                         onPressed: () async {
-                          final config = PaymentConfig(
-                            amount: ((_cart.totalPrice + 50) *
-                                100), // Amount should be in paisa
-                            productIdentity: _cart.products.first.serviceId,
-                            productName: '${_cart.products.first.categoryId}',
-                          );
-                          await KhaltiScope.of(context).pay(
-                            config: config,
-                            preferences: [
-                              PaymentPreference.khalti,
-                              PaymentPreference.mobileBanking,
-                            ],
-                            onSuccess: (value) async {
-                              for (var i = 0; i < _cart.products.length; i++) {
-                                ref
-                                    .read(createBookingProvider.notifier)
-                                    .createBookings(
-                                      booking: _cart.booking(
-                                        bookingDate: date,
-                                        time: time,
-                                        serviceId: service.id,
-                                        userId: '',
-                                        merchantId: service.merchantId,
-                                      ),
-                                    );
-                              }
-                            },
-                            onFailure: (value) {
-                              context.showSnackbar(message: value.message);
-                            },
-                          );
+                          // final config = PaymentConfig(
+                          //   amount: ((_cart.totalPrice + 50) *
+                          //       100), // Amount should be in paisa
+                          //   productIdentity: _cart.products.first.serviceId,
+                          //   productName: '${_cart.products.first.categoryId}',
+                          // );
+                          // await KhaltiScope.of(context).pay(
+                          //   config: config,
+                          //   preferences: [
+                          //     PaymentPreference.khalti,
+                          //     PaymentPreference.mobileBanking,
+                          //   ],
+                          //   onSuccess: (value) async {
+                          //     for (var i = 0; i < _cart.products.length; i++) {
+                          //       ref
+                          //           .read(createBookingProvider.notifier)
+                          //           .createBookings(
+                          //             booking: _cart.booking(
+                          //               bookingDate: date,
+                          //               time: time,
+                          //               serviceId: service.id,
+                          //               userId: '',
+                          //               merchantId: service.merchantId,
+                          //             ),
+                          //           );
+                          //     }
+                          //   },
+                          //   onFailure: (value) {
+                          //     context.showSnackbar(message: value.message);
+                          //   },
+                          // );
                         },
                         icon: Assets.icons.khaltiLogo.svg(height: 23.h),
                       ),
@@ -115,14 +121,15 @@ class CheckoutView extends HookConsumerWidget {
                         icon: Assets.images.esewaLogo.image(height: 23.h),
                         onPressed: () {
                           context.showSnackbar(
-                              message: 'Unable to Pay with eSEWA');
+                            message: 'Unable to Pay with eSEWA',
+                          );
                         },
                         titleColor: const Color(0xff60BB47),
                       ),
                     ],
                   ).px(20).toSliverBox;
                 },
-              )
+              ),
             ],
           ),
         );

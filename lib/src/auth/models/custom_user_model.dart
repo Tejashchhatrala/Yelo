@@ -5,7 +5,7 @@ part 'custom_user_model.g.dart';
 part 'custom_user_model.freezed.dart';
 
 @freezed
-class CustomUserModel with _$CustomUserModel {
+abstract class CustomUserModel with _$CustomUserModel {
   const CustomUserModel._();
   @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
   const factory CustomUserModel({

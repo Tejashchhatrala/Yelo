@@ -7,7 +7,7 @@ import 'package:gharelu/src/core/theme/theme.dart';
 
 class DottedImageViewer extends StatelessWidget {
   const DottedImageViewer({Key? key, required this.image, this.onDelete})
-      : super(key: key);
+    : super(key: key);
   final String image;
   final VoidCallback? onDelete;
 
@@ -23,8 +23,8 @@ class DottedImageViewer extends StatelessWidget {
             height: 120,
             fit: BoxFit.cover,
           ),
-          strokeCap: StrokeCap.butt,
-          dashPattern: [10, 12],
+          // strokeCap: StrokeCap.butt,
+          // dashPattern: [10, 12],
         ),
         Positioned(
           left: -10,
