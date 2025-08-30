@@ -1,6 +1,6 @@
 # Gharelu
 
-Gharelu is a comprehensive on-demand handyman services platform built with Flutter, delivering a seamless experience for both users seeking home services and service providers offering their expertise.
+Gharelu is an comprehensive on-demand handyman services platform built with Flutter, delivering a seamless experience for both users seeking home services and service providers offering their expertise.
 
 ## 🌟 Features
 
