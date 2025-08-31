@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gharelu/src/core/constant/app_constant.dart';
-import 'package:gharelu/src/core/utility/contact_utility.dart';
-import 'package:gharelu/src/core/widgets/widgets.dart';
-import 'package:gharelu/src/home/widgets/widgets.dart';
+import 'package:YELO/src/core/constant/app_constant.dart';
+import 'package:YELO/src/core/utility/contact_utility.dart';
+import 'package:YELO/src/core/widgets/widgets.dart';
+import 'package:YELO/src/home/widgets/widgets.dart';
 
 @RoutePage()
 class HelpAndSupportView extends StatelessWidget {

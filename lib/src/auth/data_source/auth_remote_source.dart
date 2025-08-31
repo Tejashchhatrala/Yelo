@@ -5,13 +5,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gharelu/src/auth/models/custom_user_model.dart';
-import 'package:gharelu/src/core/collections/firebase_db_collection.dart';
-import 'package:gharelu/src/core/constant/app_constant.dart';
-import 'package:gharelu/src/core/enum/auth_type.dart';
-import 'package:gharelu/src/core/errors/app_error.dart';
-import 'package:gharelu/src/core/helpers/storage_helper.dart';
-import 'package:gharelu/src/core/providers/firbease_provider.dart';
+import 'package:YELO/src/auth/models/custom_user_model.dart';
+import 'package:YELO/src/core/collections/firebase_db_collection.dart';
+import 'package:YELO/src/core/constant/app_constant.dart';
+import 'package:YELO/src/core/enum/auth_type.dart';
+import 'package:YELO/src/core/errors/app_error.dart';
+import 'package:YELO/src/core/helpers/storage_helper.dart';
+import 'package:YELO/src/core/providers/firbease_provider.dart';
 import 'package:logger/logger.dart';
 
 abstract class _AuthRemoteSource {

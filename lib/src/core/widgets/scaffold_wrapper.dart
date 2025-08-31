@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:gharelu/src/core/extensions/context_extension.dart';
+import 'package:YELO/src/core/extensions/context_extension.dart';
 
 class ScaffoldWrapper extends StatelessWidget {
   const ScaffoldWrapper({

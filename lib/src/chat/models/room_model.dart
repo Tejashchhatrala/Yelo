@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:gharelu/src/auth/models/custom_user_model.dart';
-import 'package:gharelu/src/home/models/product_model.dart';
+import 'package:YELO/src/auth/models/custom_user_model.dart';
+import 'package:YELO/src/home/models/product_model.dart';
 
 part 'room_model.g.dart';
 part 'room_model.freezed.dart';

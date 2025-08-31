@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gharelu/src/core/assets/assets.gen.dart';
-import 'package:gharelu/src/core/extensions/extensions.dart';
-import 'package:gharelu/src/core/theme/app_styles.dart';
-import 'package:gharelu/src/core/widgets/widgets.dart';
+import 'package:YELO/src/core/assets/assets.gen.dart';
+import 'package:YELO/src/core/extensions/extensions.dart';
+import 'package:YELO/src/core/theme/app_styles.dart';
+import 'package:YELO/src/core/widgets/widgets.dart';
 
 class ChatListTile extends StatelessWidget {
   const ChatListTile({

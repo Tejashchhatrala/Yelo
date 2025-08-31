@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:gharelu/src/core/assets/assets.gen.dart';
-import 'package:gharelu/src/core/extensions/context_extension.dart';
+import 'package:YELO/src/core/assets/assets.gen.dart';
+import 'package:YELO/src/core/extensions/context_extension.dart';
 
 typedef LoadingErrorWidgetBuilder = Widget Function(
   BuildContext context,

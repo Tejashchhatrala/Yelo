@@ -2,14 +2,15 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gharelu/src/auth/providers/forms/login/user_login_form_provider.dart';
-import 'package:gharelu/src/auth/providers/user_login_provider.dart';
-import 'package:gharelu/src/core/extensions/context_extension.dart';
-import 'package:gharelu/src/core/extensions/extensions.dart';
-import 'package:gharelu/src/core/routes/app_router.dart';
-import 'package:gharelu/src/core/state/app_state.dart';
-import 'package:gharelu/src/core/theme/app_styles.dart';
-import 'package:gharelu/src/core/widgets/widgets.dart';
+import 'package:YELO/src/auth/providers/forms/login/user_login_form_provider.dart';
+import 'package:YELO/src/auth/providers/user_login_provider.dart';
+import 'package:YELO/src/core/extensions/context_extension.dart';
+import 'package:YELO/src/core/extensions/extensions.dart';
+import 'package:YELO/src/auth/view/user_auth_view/phone_login_view.dart';
+import 'package:YELO/src/core/routes/app_router.dart';
+import 'package:YELO/src/core/state/app_state.dart';
+import 'package:YELO/src/core/theme/app_styles.dart';
+import 'package:YELO/src/core/widgets/widgets.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 @RoutePage()
@@ -93,6 +94,23 @@ class LoginUserView extends HookConsumerWidget {
                         orElse: () => false,
                         loading: () => true,
                       ),
+                ),
+              ),
+              20.verticalSpace,
+              Row(
+                children: [
+                  const Expanded(child: Divider()),
+                  10.horizontalSpace,
+                  const Text('OR'),
+                  10.horizontalSpace,
+                  const Expanded(child: Divider()),
+                ],
+              ),
+              20.verticalSpace,
+              Align(
+                child: CustomButton(
+                  onPressed: () => context.router.pushWidget(const PhoneLoginView()),
+                  title: 'Login with Phone',
                 ),
               ),
               40.verticalSpace,

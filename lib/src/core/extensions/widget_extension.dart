@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:gharelu/src/core/theme/app_styles.dart';
-import 'package:gharelu/src/core/theme/theme.dart';
+import 'package:YELO/src/core/theme/app_styles.dart';
+import 'package:YELO/src/core/theme/theme.dart';
 
 extension WidgetX on Widget {
   Padding px(double padding) => Padding(

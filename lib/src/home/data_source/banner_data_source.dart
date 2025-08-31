@@ -2,10 +2,10 @@ import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gharelu/src/core/constant/app_constant.dart';
-import 'package:gharelu/src/core/errors/app_error.dart';
-import 'package:gharelu/src/core/providers/firbease_provider.dart';
-import 'package:gharelu/src/home/models/banner_model.dart';
+import 'package:YELO/src/core/constant/app_constant.dart';
+import 'package:YELO/src/core/errors/app_error.dart';
+import 'package:YELO/src/core/providers/firbease_provider.dart';
+import 'package:YELO/src/home/models/banner_model.dart';
 
 abstract class _BannerRemoteSource {
   Future<Either<AppError, List<BannerModel>>> getBanners();

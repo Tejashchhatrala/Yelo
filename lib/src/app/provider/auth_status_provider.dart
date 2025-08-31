@@ -1,8 +1,8 @@
-import 'package:gharelu/src/app/data_source/auth_status_data_source.dart';
-import 'package:gharelu/src/auth/models/custom_user_model.dart';
-import 'package:gharelu/src/core/errors/app_error.dart';
-import 'package:gharelu/src/core/providers/firbease_provider.dart';
-import 'package:gharelu/src/core/state/app_state.dart';
+import 'package:YELO/src/app/data_source/auth_status_data_source.dart';
+import 'package:YELO/src/auth/models/custom_user_model.dart';
+import 'package:YELO/src/core/errors/app_error.dart';
+import 'package:YELO/src/core/providers/firbease_provider.dart';
+import 'package:YELO/src/core/state/app_state.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AuthStatusNotifier extends StateNotifier<AppState<CustomUserModel>> {

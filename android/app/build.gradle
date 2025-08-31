@@ -33,7 +33,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace = "com.example.gharelu"
+    namespace = "com.example.yelo"
     compileSdk = 35
 
 
@@ -58,7 +58,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "app.gharelu"
+        applicationId = "app.yelo"
         minSdk = 31
         targetSdk = 35
         versionCode = flutterVersionCode.toInteger()

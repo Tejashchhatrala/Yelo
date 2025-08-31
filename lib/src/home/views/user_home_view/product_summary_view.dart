@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gharelu/src/core/extensions/widget_extension.dart';
-import 'package:gharelu/src/core/routes/app_router.dart';
-import 'package:gharelu/src/core/theme/app_colors.dart';
-import 'package:gharelu/src/core/theme/app_styles.dart';
-import 'package:gharelu/src/core/widgets/widgets.dart';
-import 'package:gharelu/src/home/models/service_model.dart';
-import 'package:gharelu/src/home/providers/cart_provider.dart';
-import 'package:gharelu/src/home/widgets/widgets.dart';
+import 'package:YELO/src/core/extensions/widget_extension.dart';
+import 'package:YELO/src/core/routes/app_router.dart';
+import 'package:YELO/src/core/theme/app_colors.dart';
+import 'package:YELO/src/core/theme/app_styles.dart';
+import 'package:YELO/src/core/widgets/widgets.dart';
+import 'package:YELO/src/home/models/service_model.dart';
+import 'package:YELO/src/home/providers/cart_provider.dart';
+import 'package:YELO/src/home/widgets/widgets.dart';
 
 @RoutePage()
 class ProductSummaryView extends StatelessWidget {

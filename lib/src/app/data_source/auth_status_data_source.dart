@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:gharelu/src/auth/models/custom_user_model.dart';
-import 'package:gharelu/src/core/constant/app_constant.dart';
-import 'package:gharelu/src/core/errors/app_error.dart';
-import 'package:gharelu/src/core/providers/firbease_provider.dart';
+import 'package:YELO/src/auth/models/custom_user_model.dart';
+import 'package:YELO/src/core/constant/app_constant.dart';
+import 'package:YELO/src/core/errors/app_error.dart';
+import 'package:YELO/src/core/providers/firbease_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AuthStatusDataSource {

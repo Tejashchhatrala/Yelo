@@ -1,7 +1,13 @@
 export 'package:auto_route/auto_route.dart';
 
 import 'package:auto_route/auto_route.dart';
-import 'package:gharelu/src/core/routes/app_router.gr.dart';
+import 'package:YELO/src/auth/view/user_auth_view/otp_view.dart';
+import 'package:YELO/src/auth/view/user_auth_view/phone_login_view.dart';
+import 'package:YELO/src/admin/views/admin_dashboard_view.dart';
+import 'package:YELO/src/home/views/user_home_view/add_opportunity_view.dart';
+import 'package:YELO/src/home/views/user_home_view/comment_view.dart';
+import 'package:YELO/src/onboarding/views/onboarding_view.dart';
+import 'package:YELO/src/core/routes/app_router.gr.dart';
 
 export 'app_router.gr.dart';
 
@@ -14,10 +20,13 @@ class AppRouter extends RootStackRouter {
 
   @override
   final List<AutoRoute> routes = [
+    AutoRoute(page: OnboardingRoute.page),
     AutoRoute(page: SplashRoute.page, path: '/'),
     AutoRoute(page: LoginChoiceRoute.page),
     AutoRoute(page: UserSignupRoute.page),
     AutoRoute(page: LoginUserRoute.page),
+    AutoRoute(page: PhoneLoginRoute.page),
+    AutoRoute(page: OtpRoute.page),
     AutoRoute(page: MerchantSignupRoute.page),
     AutoRoute(page: MerchantLoginRoute.page),
     AutoRoute(page: WelcomeRoute.page),
@@ -44,5 +53,8 @@ class AppRouter extends RootStackRouter {
     ]),
     AutoRoute(page: CreateProductRoute.page),
     AutoRoute(page: VerifyEmailRoute.page),
+    AutoRoute(page: CommentRoute.page),
+    AutoRoute(page: AddOpportunityRoute.page),
+    AutoRoute(page: AdminDashboardRoute.page),
   ];
 }
