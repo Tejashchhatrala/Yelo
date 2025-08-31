@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gharelu/src/app/views/app.dart';
-import 'package:gharelu/src/auth/entities/user_login_entity.dart';
-import 'package:gharelu/src/auth/providers/forms/login/user_login_form_state.dart';
-import 'package:gharelu/src/core/extensions/extensions.dart';
-import 'package:gharelu/src/core/validations/field.dart';
+import 'package:YELO/src/app/views/app.dart';
+import 'package:YELO/src/auth/entities/user_login_entity.dart';
+import 'package:YELO/src/auth/providers/forms/login/user_login_form_state.dart';
+import 'package:YELO/src/core/extensions/extensions.dart';
+import 'package:YELO/src/core/validations/field.dart';
 
 class UserLoginFormProvider extends StateNotifier<UserLoginFormState> {
   UserLoginFormProvider() : super(UserLoginFormState(UserLoginEntity.empty()));

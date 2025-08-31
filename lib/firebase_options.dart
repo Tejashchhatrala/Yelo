@@ -32,19 +32,19 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyBAuHgGPhWKbrQlaumlYID_BM4HB4I0ZbQ',
     appId: '1:398152368850:android:1eff6ee44143fef62ba30b',
     messagingSenderId: '398152368850',
-    projectId: 'ghareluapp-np',
-    storageBucket: 'ghareluapp-np.appspot.com',
+    projectId: 'yeloapp',
+    storageBucket: 'yeloapp.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyD8ywoKAg-6pJ33mK8ND2ikVhD3In1wx9I',
     appId: '1:398152368850:ios:e36d18ea25545ac22ba30b',
     messagingSenderId: '398152368850',
-    projectId: 'ghareluapp-np',
-    storageBucket: 'ghareluapp-np.appspot.com',
+    projectId: 'yeloapp',
+    storageBucket: 'yeloapp.appspot.com',
     androidClientId: '398152368850-2kdcoqfmjd4duq4ga4htn4svbq7s835d.apps.googleusercontent.com',
     iosClientId: '398152368850-o822p1ea53vcr98ujnprs5c7sq5ed4sc.apps.googleusercontent.com',
-    iosBundleId: 'app.gharelu',
+    iosBundleId: 'app.yelo',
   );
 
 }

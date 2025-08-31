@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gharelu/src/core/errors/app_error.dart';
-import 'package:gharelu/src/core/state/app_state.dart';
-import 'package:gharelu/src/map_view/data_source/location_data_source.dart';
+import 'package:YELO/src/core/errors/app_error.dart';
+import 'package:YELO/src/core/state/app_state.dart';
+import 'package:YELO/src/map_view/data_source/location_data_source.dart';
 
 class GetLocationState extends StateNotifier<AppState<String>> {
   GetLocationState(this._dataSource) : super(const AppState<String>.initial());

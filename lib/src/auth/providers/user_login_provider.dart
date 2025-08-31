@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:gharelu/src/auth/data_source/auth_remote_source.dart';
-import 'package:gharelu/src/core/errors/app_error.dart';
-import 'package:gharelu/src/core/state/app_state.dart';
+import 'package:YELO/src/auth/data_source/auth_remote_source.dart';
+import 'package:YELO/src/core/errors/app_error.dart';
+import 'package:YELO/src/core/state/app_state.dart';
 
 class UserLoginState extends StateNotifier<AppState> {
   UserLoginState(this._remoteSource) : super(const AppState.initial());

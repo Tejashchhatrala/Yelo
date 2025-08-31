@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:gharelu/src/core/extensions/extensions.dart';
-import 'package:gharelu/src/core/validations/field.dart';
+import 'package:YELO/src/core/extensions/extensions.dart';
+import 'package:YELO/src/core/validations/field.dart';
 part 'user_signup_entities.freezed.dart';
 
 @freezed

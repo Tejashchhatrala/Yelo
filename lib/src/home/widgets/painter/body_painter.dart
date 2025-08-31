@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gharelu/src/core/theme/theme.dart';
+import 'package:YELO/src/core/theme/theme.dart';
 
 class BodyPainter extends CustomPainter {
   @override

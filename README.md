@@ -1,45 +1,19 @@
-# Gharelu
+# YELO - Community Opportunity Feed
 
-Gharelu is an comprehensive on-demand handyman services platform built with Flutter, delivering a seamless experience for both users seeking home services and service providers offering their expertise.
+YELO is a Flutter-based mobile application that connects people with local opportunities. It's a community-driven platform where users can discover and engage with events, projects, and other opportunities happening around them.
 
 ## 🌟 Features
 
-### For Users
-- 🔍 Smart search with category and service type filters
-- 📅 Seamless appointment scheduling
-- 💬 Real-time chat with service providers
-- 📍 Location-based service provider discovery
-- 💳 Integrated payments (Khalti & eSewa)
-- 📱 Intuitive appointment management
-- ⭐ Service provider ratings and reviews
-
-### For Service Providers
-- 📊 Service listing management dashboard
-- 📨 Real-time appointment request notifications
-- 📆 Schedule and availability management
-- 💰 Secure payment processing through Khalti
-- 📈 Performance analytics and insights
-
-### Other Features
-
-- Real-time chat between users and service providers.
-- Secure authentication and user account management.
-- Integration with Google Maps for location-based search and appointment scheduling.
+- **Local Opportunity Feed**: A dynamic, image-rich feed of opportunities, styled like a modern social media app.
+- **Firebase Authentication**: Secure sign-up and login with email and phone number.
+- **Interactive Cards**: Like and bookmark opportunities that interest you.
+- **User Profiles**: View your profile, and see lists of opportunities you've liked and bookmarked.
+- **Commenting**: Engage in discussions on each opportunity with threaded comments.
+- **Real-time Updates**: The feed and comments update in real-time, powered by Firestore.
 
 ## 📱 Screenshots
 
-<table>
-  <tr>
-    <td><img src="/screenshoots/splash_screen.jpg"  alt="Gharelu App Github"/></td>
-    <td><img src="/screenshoots/login_screen.jpg"  alt="Gharelu App Github"/></td>
-    <td><img src="/screenshoots/home_image.jpg"  alt="Gharelu App Github"/></td>
-  </tr>
-  <tr>
-    <td><img src="/screenshoots/cart_image.jpg"  alt="Gharelu App Github"/></td>
-    <td><img src="/screenshoots/select_slot_image.jpg"  alt="Gharelu App Github"/></td>
-    <td></td>
-  </tr>
-</table>
+*Screenshots will be added here once the new UI is complete.*
 
 ## 🛠️ Tech Stack
 
@@ -48,11 +22,6 @@ Gharelu is an comprehensive on-demand handyman services platform built with Flut
 - **Database**: Cloud Firestore
 - **Authentication**: Firebase Auth
 - **Storage**: Firebase Cloud Storage
-- **Location Services**: Google Maps
-- **Payment Integration**: Khalti, eSewa
-- **Search**: Algolia
-- **Features**: Firebase Cloud Functions
-
 
 ## 🚀 Getting Started
 
@@ -68,8 +37,8 @@ Gharelu is an comprehensive on-demand handyman services platform built with Flut
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/gharelu.git
-cd gharelu
+git clone https://github.com/yourusername/yelo.git
+cd yelo
 ```
 
 2. Install dependencies
@@ -80,29 +49,14 @@ flutter pub get
 3. Configure Firebase
    - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com)
    - Enable required services:
-     - Authentication
+     - Authentication (with Email/Password and Phone providers)
      - Cloud Firestore
      - Cloud Storage
-     - Cloud Functions
    - Download configuration files:
      - Add `google-services.json` to `android/app/`
      - Add `GoogleService-Info.plist` to `ios/Runner/`
 
-4. Environment Setup
-Create a `.env` file in the project root:
-```env
-MAPBOX_KEY=your_mapbox_key
-GOOGLE_MAP_API_KEY=your_google_maps_key
-ALGOLIA_APPLICATIONID=your_algolia_app_id
-ALGOLIA_APIKEY=your_algolia_api_key
-```
-
-5. Generate Required Code
-```bash
-flutter pub run build_runner build --delete-conflicting-outputs
-```
-
-6. Run the application
+4. Run the application
 ```bash
 flutter run
 ```
@@ -125,20 +79,4 @@ flutter run
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Flutter](https://flutter.dev/) - UI toolkit
-- [Firebase](https://firebase.google.com/) - Backend services
-- [Google Maps](https://developers.google.com/maps) - Location services
-- [Khalti](https://khalti.com/) - Payment gateway
-- [eSewa](https://esewa.com.np/) - Payment gateway
-- [Algolia](https://www.algolia.com/) - Search functionality
-
-## 📞 Contact
-
-For support or queries, please reach out to:
-- Email: bhattaraiaayush08@gmail.com
-- Website: [aayushbhattarai.info.np](https://aayushbhattarai.info.np)
-- WhatApp: [Contact](https://wa.me/+9779818630213)
+This project is licensed under the MIT License.

@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gharelu/main.dart';
-import 'package:gharelu/src/core/extensions/extensions.dart';
-import 'package:gharelu/src/core/routes/app_router.dart';
-import 'package:gharelu/src/core/theme/app_styles.dart';
-import 'package:gharelu/src/core/theme/theme.dart';
+import 'package:YELO/main.dart';
+import 'package:YELO/src/core/extensions/extensions.dart';
+import 'package:YELO/src/core/routes/app_router.dart';
+import 'package:YELO/src/core/theme/app_styles.dart';
+import 'package:YELO/src/core/theme/theme.dart';
 
 class AppView extends StatelessWidget {
   AppView({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class AppView extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             routerDelegate: _router.delegate(),
             routeInformationParser: _router.defaultRouteParser(),
-            title: 'Gharelu',
+            title: 'YELO',
             theme: ThemeData(
               useMaterial3: true,
               appBarTheme: AppBarTheme(

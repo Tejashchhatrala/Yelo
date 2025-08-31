@@ -1,4 +1,4 @@
-import 'package:gharelu/src/core/entity/help_and_support_entity.dart';
+import 'package:YELO/src/core/entity/help_and_support_entity.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 Future launchType(UtilityEnum type, String content) async {

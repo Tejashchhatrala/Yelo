@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gharelu/src/core/assets/assets.gen.dart';
-import 'package:gharelu/src/core/extensions/extensions.dart';
-import 'package:gharelu/src/core/theme/app_styles.dart';
-import 'package:gharelu/src/core/theme/theme.dart';
+import 'package:YELO/src/core/assets/assets.gen.dart';
+import 'package:YELO/src/core/extensions/extensions.dart';
+import 'package:YELO/src/core/theme/app_styles.dart';
+import 'package:YELO/src/core/theme/theme.dart';
 import 'package:lottie/lottie.dart';
 
 extension ContextX on BuildContext {
